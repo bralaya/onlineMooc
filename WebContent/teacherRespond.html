@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>教师付费提问页面</title>
+		<script src="js/OnlineMoc.js"></script>
+	</head>
+	<body>
+	
+		<!-- 点击发起查看请求 -->
+		<div id="checkAskerListContainer">
+			<button onclick="AjaxSend(12);">刷新提问者请求列表</button>
+			<!-- <button onclick="AjaxSend(16);">刷新聊天列表</button> -->
+			
+		</div>
+		
+		<!-- 提问者请求列表 -->
+		<div id="askerListContainer">
+			
+		</div>
+	
+	
+		<!-- 保存提问者的订单上的消息方便后面发起消息用 -->
+		<div id="saveOrderInformationContainer" style="display:none;">
+			<span>提问者id:<span id="saveAskerid"></span></span>
+			<span>提问者昵称:<span id="saveAskerName"></span></span>
+			<span>课程id:<span id="saveCourseid"></span></span>
+			
+		</div>
+	
+		<!-- 聊天板块最外层容器 #1CB177-->
+		<div id="teacherChatContainer" style="display:none;width:430px;height:460px;background-color:white;border:1px solid white;">
+			
+			<!--头部 -->
+			<div style="width: 420px;background-color:#1CB177;border:1px solid #1CB177;overflow: hidden;">
+				<button onclick="stopTeacherQueryChatReocrd();" style="padding: 10px;background-color: whitesmoke;border:1px solid darkblue;float:right">点击结束付费提问</button>
+			</div>
+			
+			<!-- 聊天消息列表最外层容器 -->
+			<div id="teacherChatMessageListContainer" style="width:420px;height:260px;;border:1px solid grey;background-color: white;">
+				
+				
+			</div>
+			
+			<!-- 发送消息最外层容器 -->
+			<div id="teacherSendMessageContainer" style="background-color: white;">
+				<textarea id="teacherSendMessageContent" style="width: 420px;height:80px;"></textarea>
+				<br />
+				<button onclick="AjaxSend(18);" style="float:right;margin-right: 6px;margin-bottom: 8px;margin-top: 0px;padding: 4px;background-color: white;">发送消息</button>
+				<br>
+			</div>
+			
+		</div>
+	
+	</body>
+</html>

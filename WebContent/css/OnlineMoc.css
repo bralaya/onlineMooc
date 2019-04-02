@@ -1,0 +1,184 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+
+/* ------------------------------------------------------------固定导航栏页 CSS*/
+
+
+
+#ngbarEnterSuccess{
+	display:none;
+}
+
+/* 导航栏 */
+#navigationBar{
+	width:100%;
+	display:relative;
+	height:50px;
+	overflow:hidden;
+}
+
+#navigationBar ul li{
+	list-style:none;
+	float:left;
+	margin:10px 10px 10px 10px;
+	padding:10px 10px 10px 10px;
+}
+
+/* 登入注册遮罩层 */
+#enterRegisterMask{
+	z-index:998;
+	width:100%;
+	height:100%;
+	background-color:grey;
+	position:fixed;
+	display:none;
+}
+
+/* 登入注册的容器框 */
+#enterRegisterDiv{
+	z-index:999;
+	display:none;
+	
+	position:fixed;
+	background-color:white;
+	
+	/*设置居中*/
+	width:300px;
+	height:300px;
+	left:50%;
+	margin-left:-150px;
+	margin-top:20px;
+}
+
+/* 登入注册选择小导航容器 */
+
+/* 登入选择小导航div*/
+#enterChoise{
+	width:50%;
+	float:left;
+	
+}
+#enterChoise h2{
+	float:right;
+}
+
+/* 注册选择小导航div*/
+#registerChoise{
+	
+}
+
+/* 登入框的div */
+#enterDiv{
+	width:300px;
+	height:300px;
+	margin-left:20px;
+	display:block;
+	
+}
+
+/* 注册框的div */
+#registerDiv{
+	width:300px;
+	height:300px;
+	display:none;
+	margin-left:20px;
+}
+
+/* 导航栏用户悬浮框 */
+#floatUsernavBarLi1:hover{
+	background-color:blue;
+}
+
+/* -------------------------------------------------------用户后台管理页 CSS */
+
+
+/* 用户管理页左侧导航栏容器 */
+#userAdminLeftSideContainer{
+	float:left;
+	
+	position:fixed;
+	height:100%;
+}
+#userAdminLeftSideContainer button:hover {
+	color:blue;
+	
+}
+
+/* 右侧内容显示页容器 */
+#contentContainer{
+	float:left;
+	
+	position:fixed;
+	height:1000px;
+	margin-left:250px;
+	overflow:auto;
+	width:100%;
+}
+
+/* 我开的课程最外层容器 */
+#courseContentContainer{
+	
+	width:100%;
+	height:1000px;
+	
+}
+
+/* 我的课程列表返回结果 */
+#myCourseDiv{
+	background-color:white;
+}
+
+/* 开新课div */
+#newCourseDiv{
+	display:none;
+	overflow:scroll;
+	width:100%;
+	height:3000px;
+	background-color:white;
+}
+
+
+/* js生成的课程填写内容表单容器 */
+#CourseFormPostContainer{
+	overflow:scroll;
+	width:100%;
+	height:1000px;
+}
+
+
+/* -----------------------------------------------------------慕课首页  CSS */
+
+
+#newFreeCourseContainer{
+	
+}
+
+
+
+
+/* ----------------------------------------------------------课程详细内容页 css */
+
+/* 课程导航块 css */
+#courseDetailNavContainer{
+	border:1px solid orange;
+	
+}
+
+/* 课程内容容器 css */
+#courseDetailContentContainer{
+	
+}
+
+/* 课程左侧内容容器 css */
+#courseDetailLeftContainer{
+	
+}
+
+/* 课程右侧内容容器 css */
+#courseDetailRightNavContainer{
+	
+}
+
